@@ -1,6 +1,5 @@
-import React, {useState} from 'react'
-import moonImg from '../assets/destination/image-moon.png'
-import data from '../assets/data.json'
+import React, {useState} from 'react';
+import data from '../assets/data.json';
 
 const DestinationHero = () => {
     const [activeDestination, setActiveDestination] = useState('Moon');
@@ -16,7 +15,7 @@ const DestinationHero = () => {
             <div className="left w-[540px] tablet:w-full tablet:flex justify-center mobile:m-6">
                 <img className='w-[480px] h-[480px] tablet:w-[300px] tablet:h-[300px] mobile:w-[150px] mobile:h-[150px]' src={destinationData.images.png} alt={destinationData.name} />
             </div>
-            <div className="right w-[540px] tablet:w-[514px] mobile:w-[327px] m-10 tablet:text-center mobile:m-5">
+            <div className="right w-[540px] tablet:w-[514px] mobile:w-[327px] tablet:m-10 tablet:text-center mobile:m-5">
                 <ul className='flex gap-4 tablet:justify-center font-barlow-condensed text-base mobile:text-sm'>
                     {data.destinations.map(dest => (
                         <li className='' key={dest.name}>
