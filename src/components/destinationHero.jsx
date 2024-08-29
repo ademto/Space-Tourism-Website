@@ -1,14 +1,13 @@
 import React, {useState} from 'react';
 import data from '../assets/data.json';
+import PageHeading from './pageHeading';
 
 const DestinationHero = () => {
     const [activeDestination, setActiveDestination] = useState('Moon');
     const destinationData = data.destinations.find(dest => dest.name === activeDestination);
   return (
     <div>
-        <div className='w-[1110px] mb-28 mx-auto tablet:w-full tablet:px-10 tablet:pt-10 mobile:my-6 mobile:p-0 mobile:text-center'>
-            <p style={{ wordSpacing: '0.05em' }} className='text-white font-barlow-condensed text-[28px] tracking-[4px] uppercase mobile:text-base'><span className='font-bold text-slate-500'>01 &nbsp;</span> Pick Your Destination</p>
-        </div>
+        <PageHeading text="Pick Your Destination" subtext="01"/>
         {destinationData && (
             <>
         <div className="w-[1110px] flex items-center justify-between mx-auto text-white tablet:w-full tablet:flex-col">
@@ -20,7 +19,7 @@ const DestinationHero = () => {
                     {data.destinations.map(dest => (
                         <li className='' key={dest.name}>
                         <button
-                            className={`nav-link ${activeDestination === dest.name ? "relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[3px] after:bg-white after:transition-width after:duration-300" : 'text-blue-300'} uppercase pb-4 `}
+                            className={`${activeDestination === dest.name ? "relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[3px] after:bg-white after:transition-width after:duration-300" : 'text-blue-300'} uppercase pb-4 `}
                             onClick={() => setActiveDestination(dest.name)}
                         >
                             {dest.name}

@@ -13,6 +13,9 @@ export default {
         'destination-bg': "url('./src/assets/destination/background-destination-desktop.jpg')",
         'destination-bg-tablet': "url('./src/assets/destination/background-destination-tablet.jpg')",
         'destination-bg-mobile': "url('./src/assets/destination/background-destination-mobile.jpg')",
+        'crew-bg': "url('./src/assets/crew/background-crew-desktop.jpg')",
+        'crew-bg-tablet': "url('./src/assets/crew/background-crew-tablet.jpg')",
+        'crew-bg-mobile': "url('./src/assets/crew/background-crew-mobile.jpg')",
       },
       screens: {
         'tablet': { 'raw': '(max-width: 1024px)' },  // Custom media query for tablets and larger
