@@ -10,7 +10,7 @@ const DestinationHero = () => {
         <PageHeading text="Pick Your Destination" subtext="01"/>
         {destinationData && (
             <>
-        <div className="w-[1110px] flex items-center justify-between mx-auto text-white tablet:w-full tablet:flex-col">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[35%] mobile:-translate-y-[40%] flex items-center justify-between text-white tablet:w-full tablet:flex-col">
             <div className="left w-[540px] tablet:w-full tablet:flex justify-center mobile:m-6">
                 <img className='w-[480px] h-[480px] tablet:w-[300px] tablet:h-[300px] mobile:w-[150px] mobile:h-[150px]' src={destinationData.images.png} alt={destinationData.name} />
             </div>

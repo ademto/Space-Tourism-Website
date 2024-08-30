@@ -16,6 +16,9 @@ export default {
         'crew-bg': "url('./src/assets/crew/background-crew-desktop.jpg')",
         'crew-bg-tablet': "url('./src/assets/crew/background-crew-tablet.jpg')",
         'crew-bg-mobile': "url('./src/assets/crew/background-crew-mobile.jpg')",
+        'technology-bg': "url('./src/assets/technology/background-technology-desktop.jpg')",
+        'technology-bg-tablet': "url('./src/assets/technology/background-technology-tablet.jpg')",
+        'technology-bg-mobile': "url('./src/assets/technology/background-technology-mobile.jpg')",
       },
       screens: {
         'tablet': { 'raw': '(max-width: 1024px)' },  // Custom media query for tablets and larger

@@ -9,6 +9,7 @@ import './index.css'
 import Home from './pages/Home.jsx';
 import Destination from './pages/Destination.jsx';
 import Crew from './pages/Crew.jsx';
+import Technology from './pages/Technology.jsx';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "/crew",
     element: <Crew />,
+  },
+  {
+    path: "/technology",
+    element: <Technology />,
   },
   
 ]);
